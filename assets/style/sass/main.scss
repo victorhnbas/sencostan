@@ -1,0 +1,55 @@
+@import "variables";
+@import "fonts";
+@import "mixin";
+@import "global";
+
+/* main */
+main {
+    @include flex(column);
+    height: 100%;
+    width: 100%;
+    background-color: $cor-texto;
+
+    h1{
+        color: $cor-fundo;
+    }
+
+    p{
+        color: $cor-fundo;
+        margin: $margin;
+    }
+
+    input{
+        height: 5%;
+        width: 15%;
+        margin: $margin;
+        font-size: $font;
+        background-color: transparent;
+        border-bottom: 1px solid white;
+        color: $cor-fundo
+    }
+
+    div{
+        @include flex(row);
+        height: 8%;
+        width: 100%;
+
+        button{
+            height: 70%;
+            width: 5%;
+            margin: $margin;
+            background-color: $cor-fundo;
+            border-radius: $border;
+
+            &:hover{
+                background-color: $cor-texto;
+                color: $cor-fundo;
+                cursor: pointer;
+            }
+    
+        }
+    }
+
+}
+/* main */
+
